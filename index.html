@@ -3,108 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alexandra Tipacti Gil</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Perfil Profesional</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       display: flex;
-      min-height: 100vh;
-      font-family: 'Arial', sans-serif;
-      background-color: #0d1117;
-      color: white;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      margin: 0;
     }
-    .sidebar {
-      width: 250px;
-      background-color: #161b22;
+    .container {
+      display: flex;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 900px;
+      width: 100%;
+    }
+    .profile-pic {
+      flex: 1;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 20px;
+    }
+    .profile-pic img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .info-section {
+      flex: 2;
+      background: #0077b6;
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      padding: 30px;
+      text-align: center;
     }
-    .sidebar img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      margin-bottom: 15px;
-      object-fit: cover;
-    }
-    .sidebar h2 {
-      font-size: 20px;
+    .info-section img {
+      width: 80%;
+      max-width: 400px;
       margin-bottom: 20px;
     }
-    .sidebar a {
-      color: white;
-      text-decoration: none;
-      margin: 10px 0;
-      display: block;
+    .info-section h1 {
+      margin: 0;
+      font-size: 2em;
     }
-    .content {
-      flex-grow: 1;
-      padding: 30px;
-      background: url('image.png') center/cover no-repeat;
-    }
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 30px;
-      border-radius: 10px;
-      max-width: 700px;
-    }
-    h1, h3 {
-      color: #58a6ff;
-    }
-    .skill-bar {
-      background: #2ea043;
-      height: 10px;
-      border-radius: 5px;
-      margin-bottom: 10px;
+    .info-section p {
+      margin: 10px 0 0;
     }
   </style>
 </head>
 <body>
-
-<div class="sidebar">
-  <img src="image.png" alt="Foto de Alexandra">
-  <h2>Alexandra Tipacti Gil</h2>
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#habilidades">Habilidades</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contáctame</a>
-  </nav>
-</div>
-
-<div class="content">
-  <div class="overlay">
-    <section id="inicio">
-      <h1>¡Hola! Soy Alexandra Tipacti Gil</h1>
-      <p>Estudiante apasionada de Ingeniería de Sistemas, interesada en desarrollo de software, inteligencia artificial y ciberseguridad. Me encanta crear soluciones innovadoras, mejorar procesos y seguir aprendiendo. ¡Conectemos!</p>
-    </section>
-
-    <section id="habilidades" class="mt-4">
-      <h3>Habilidades</h3>
-      <p>JavaScript (75%)</p>
-      <div class="skill-bar" style="width: 75%"></div>
-      <p>Bases de datos SQL y NoSQL (70%)</p>
-      <div class="skill-bar" style="width: 70%"></div>
-      <p>Desarrollo web (HTML, CSS, React) (75%)</p>
-      <div class="skill-bar" style="width: 75%"></div>
-      <p>Ciberseguridad básica (65%)</p>
-      <div class="skill-bar" style="width: 65%"></div>
-    </section>
-
-    <section id="proyectos" class="mt-4">
-      <h3>Proyectos</h3>
-      <p><strong>TaskFlow</strong>: Aplicación web para gestión de tareas con prioridades y fechas límite. (Python, Flask, SQLite, Bootstrap)</p>
-    </section>
-
-    <section id="contacto" class="mt-4">
-      <h3>Contáctame</h3>
-      <p>📧 alexandra@example.com</p>
-      <p>📱 +51 987654321</p>
-    </section>
+  <div class="container">
+    <div class="profile-pic">
+      <img src="/mnt/data/foto.jpg" alt="Foto de perfil">
+    </div>
+    <div class="info-section">
+      <img src="/mnt/data/A_professional_LinkedIn-style_digital_portrait_pho.png" alt="Ingeniería de Sistemas">
+      <h1>Nombre Apellido</h1>
+      <p>Ingeniera de Sistemas</p>
+    </div>
   </div>
-</div>
-
 </body>
 </html>
